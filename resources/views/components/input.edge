@@ -2,3 +2,9 @@
     <label for="{{ name }}">{{ label }}</label>
     <input type="{{ type || 'text'}}" class="{{ cls || 'form-control' }}" name="{{ name }}" id="{{ name }}">
 </div>
+
+@inputError(name)
+  @each(message in $messages)
+    <p class="text text-danger">{{ message }}</p>
+  @end
+@end

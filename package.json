@@ -40,6 +40,7 @@
     "@japa/plugin-adonisjs": "^3.0.1",
     "@japa/runner": "^3.1.2",
     "@swc/core": "^1.4.14",
+    "@types/luxon": "^3.4.2",
     "@types/node": "^20.12.7",
     "eslint": "^8.57.0",
     "pino-pretty": "^11.0.0",
@@ -59,6 +60,9 @@
     "@vinejs/vine": "^2.0.0",
     "bootstrap": "^5.3.3",
     "edge.js": "^6.0.2",
+    "jdenticon": "^3.2.0",
+    "luxon": "^3.4.4",
+    "mysql2": "^3.9.6",
     "reflect-metadata": "^0.2.2"
   },
   "eslintConfig": {
