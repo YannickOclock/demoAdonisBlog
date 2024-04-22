@@ -1,9 +1,14 @@
 <nav class="navbar bg-body-tertiary">
     <div class="container-fluid">
-      <a class="navbar-brand" href="/">Mon blog</a>
-      <div>
+        <a class="navbar-brand" href="/">Mon blog</a>
+        <div>
             <a class="btn btn-outline-info" href="{{ route('auth.register') }}">Inscription</a>
             <a class="btn btn-outline-info" href="{{ route('auth.login') }}">Connexion</a>
+
+            <form action="{{ route('auth.logout') }}?_method=DELETE" method="post">
+                {{ csrfField() }}
+                <button class="btn btn-outline-warning" type="submit">Déconnexion</button>
+            </form>
         </div>
     </div>
 </nav>
